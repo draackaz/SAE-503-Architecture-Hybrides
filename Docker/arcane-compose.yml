@@ -27,3 +27,8 @@ services:
 
 volumes:
   arcane-data:
+
+
+networks:
+  mqtt5-network:
+    external: true
