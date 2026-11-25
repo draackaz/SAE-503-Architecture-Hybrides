@@ -40,3 +40,8 @@ volumes:
   grafana-data:
   grafana-conf:
   prometheus-data:
+
+
+networks:
+  mqtt5-network:
+    external: true
