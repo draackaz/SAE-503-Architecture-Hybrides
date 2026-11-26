@@ -8,11 +8,12 @@ services:
       - "8883:8883"
       - "9001:9001" #default mqtt port for websockets
     volumes:
-      - ./mqtt/config:/mosquitto/config:rw
-      - ./mqtt/data:/mosquitto/data:rw
-      - ./mqtt/log:/mosquitto/log:rw
+      - ./config:/mosquitto/config:rw
+      - ./data:/mosquitto/data:rw
+      - ./log:/mosquitto/log:rw
     restart: unless-stopped
 
-  networks:
-    mqtt5-network:
-      external: true
+networks:
+  mqtt5-network:
+    external: true
+
