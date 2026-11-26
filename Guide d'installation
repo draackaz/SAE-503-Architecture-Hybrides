@@ -1,0 +1,4 @@
+Pour installer l'architecture sur votre serveur : 
+cd Docker/
+chmod +x install_complete.sh
+./install_complete.sh
